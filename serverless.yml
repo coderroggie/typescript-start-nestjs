@@ -1,5 +1,7 @@
-service:
-  name: serverless-example
+org: coderroggie
+app: serverless-attempt
+service: serverless-second-attempt
+frameworkVersion: '2'
 
 plugins:
   - serverless-offline
@@ -7,6 +9,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs14.x
+  lambdaHashingVersion: '20201221'
 
 functions:
   main:
